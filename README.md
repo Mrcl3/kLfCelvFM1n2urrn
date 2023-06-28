@@ -8,8 +8,7 @@ MonReader is a mobile app that offers fully automatic, high-speed, and high-qual
 
 ## Dataset
 
-The dataset used in this project consists of video clips recorded from smartphones, capturing both page flipping and non-flipping actions. These videos have been labeled accordingly. The frames from these videos have been extracted, saved as individual images.
-
+The dataset used in this project consists of video clips recorded from smartphones, capturing both page flipping and non-flipping actions. These videos have been labeled accordingly. The frames from these videos have been extracted and saved as individual images.
 
 ## Project Steps
 
@@ -22,7 +21,7 @@ The dataset used in this project consists of video clips recorded from smartphon
 2. Model Training:
    - Preprocess the images to prepare them for training.
    - Select a deep learning framework, such as TensorFlow or PyTorch.
-   - Design a convolutional neural network (CNN) model architecture.
+   - Design a convolutional neural network (CNN) model architecture or Vision Transformer model architecture.
    - Train the model using the labeled images and their corresponding labels.
    - Optimize the model's performance by tuning hyperparameters.
 
@@ -50,4 +49,17 @@ Specify the dependencies required to run the code in this project. For example:
 - TensorFlow 2.5 or above
 - NumPy
 
+## Using Vision Transformers
 
+To enhance the performance of page flipping detection, this project incorporates Vision Transformers, which have shown promising results in image classification tasks. Vision Transformers are capable of capturing long-range dependencies in images and can provide an alternative to convolutional neural networks (CNNs) for certain applications.
+
+To utilize Vision Transformers in this project, follow these additional steps:
+
+1. Data Preparation:
+   - Use the same dataset mentioned earlier, consisting of video clips and extracted frames.
+   - Ensure the presence of "flipping" and "not flipping" labels for the images.
+
+2. Model Training with Vision Transformers:
+   - Preprocess the images to prepare them for training with Vision Transformers.
+   - Select a deep learning framework that supports Vision Transformers, such as TensorFlow or PyTorch.
+   - Import the necessary libraries for Vision Transformers, such as `vit` in TensorFlow or `timm` in PyTorch
